@@ -43,9 +43,9 @@ namespace BottomsSupAPI
             {
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseMvc();
-        }
+            //public DbSet<Tokens> Tokens { get; set; }
+    }
     }
 }

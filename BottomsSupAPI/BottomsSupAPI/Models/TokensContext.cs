@@ -14,7 +14,7 @@ namespace BottomsSupAPI.Models
             {
             }
 
-            public DbSet<TokensItem> TokensItems { get; set; }
+            public DbSet<Tokens> Tokens { get; set; }
 
         }
 }

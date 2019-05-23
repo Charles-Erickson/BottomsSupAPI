@@ -1,0 +1,14 @@
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\bin\Debug\netcoreapp2.1\BottomsSupAPI.deps.json
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\bin\Debug\netcoreapp2.1\BottomsSupAPI.runtimeconfig.json
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\bin\Debug\netcoreapp2.1\BottomsSupAPI.runtimeconfig.dev.json
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\bin\Debug\netcoreapp2.1\BottomsSupAPI.dll
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.csprojAssemblyReference.cache
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.csproj.CoreCompileInputs.cache
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.RazorAssemblyInfo.cache
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.RazorAssemblyInfo.cs
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.AssemblyInfoInputs.cache
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.AssemblyInfo.cs
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.RazorTargetAssemblyInfo.cache
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\bin\Debug\netcoreapp2.1\BottomsSupAPI.pdb
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.dll
+C:\Users\cse62\OneDrive\Desktop\BottomsSupAPI\BottomsSupAPI\BottomsSupAPI\obj\Debug\netcoreapp2.1\BottomsSupAPI.pdb
