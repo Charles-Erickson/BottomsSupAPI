@@ -13,7 +13,10 @@ namespace BottomsSupAPI.Controllers
     [ApiController]
     public class TokensController : ControllerBase
     {
+        private TokensContext db = new TokensContext();
+
         private readonly TokensContext _context;
+
 
         public TokensController(TokensContext context)
         {
@@ -24,7 +27,15 @@ namespace BottomsSupAPI.Controllers
         [HttpGet]
         public IEnumerable<Tokens> GetTokens()
         {
-            return _context.Tokens;
+            var tokens= from r in db.Tokens
+                          select new
+                          {
+                              Id = r.TokenId,
+                              Price=r.Price,
+                              Name = r.Name,
+                              IsComplete=r.IsComplete
+                          };
+            return tokens;
         }
 
         // GET: api/Tokens/5

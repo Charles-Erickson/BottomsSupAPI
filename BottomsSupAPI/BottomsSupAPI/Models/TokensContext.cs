@@ -8,13 +8,20 @@ namespace BottomsSupAPI.Models
 {
     public class TokensContext : DbContext
     {
-        
-            public TokensContext(DbContextOptions<TokensContext> options)
+
+        public DbSet<Tokens> Tokens { get; set; }
+
+        public TokensContext(DbContextOptions<TokensContext> options)
                 : base(options)
             {
             }
 
-            public DbSet<Tokens> Tokens { get; set; }
+       
 
-        }
+        //public static TokensContext Create()
+        //{
+        //    return new TokensContext();
+        //}
+
+    }
 }
