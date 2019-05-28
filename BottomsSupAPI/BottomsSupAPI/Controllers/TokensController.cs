@@ -13,14 +13,14 @@ namespace BottomsSupAPI.Controllers
     [ApiController]
     public class TokensController : ControllerBase
     {
-        private TokensContext db = new TokensContext();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
-        private readonly TokensContext _context;
+      
 
 
-        public TokensController(TokensContext context)
+        public TokensController(ApplicationDbContext context)
         {
-            _context = context;
+            db = context;
         }
 
         // GET: api/Tokens
@@ -47,7 +47,7 @@ namespace BottomsSupAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            var tokens = await _context.Tokens.FindAsync(id);
+            var tokens = await db.Tokens.FindAsync(id);
 
             if (tokens == null)
             {
@@ -71,11 +71,11 @@ namespace BottomsSupAPI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(tokens).State = EntityState.Modified;
+            db.Entry(tokens).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await db.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -101,8 +101,8 @@ namespace BottomsSupAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            _context.Tokens.Add(tokens);
-            await _context.SaveChangesAsync();
+            db.Tokens.Add(tokens);
+            await db.SaveChangesAsync();
 
             return CreatedAtAction("GetTokens", new { id = tokens.TokenId }, tokens);
         }
@@ -116,21 +116,21 @@ namespace BottomsSupAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            var tokens = await _context.Tokens.FindAsync(id);
+            var tokens = await db.Tokens.FindAsync(id);
             if (tokens == null)
             {
                 return NotFound();
             }
 
-            _context.Tokens.Remove(tokens);
-            await _context.SaveChangesAsync();
+            db.Tokens.Remove(tokens);
+            await db.SaveChangesAsync();
 
             return Ok(tokens);
         }
 
         private bool TokensExists(int id)
         {
-            return _context.Tokens.Any(e => e.TokenId == id);
+            return db.Tokens.Any(e => e.TokenId == id);
         }
     }
 }
