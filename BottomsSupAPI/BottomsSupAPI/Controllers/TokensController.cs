@@ -9,13 +9,20 @@ using BottomsSupAPI.Models;
 
 namespace BottomsSupAPI.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class TokensController : ControllerBase
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-      
+        private const string URL = "https://api.stripe.com";
+        private string KEY = APIKeys.StripeApi;
+
+        public IEnumerable<Tokens> Get()
+        {
+            return db.Tokens.ToList();
+        }
 
 
         public TokensController(ApplicationDbContext context)
@@ -25,17 +32,19 @@ namespace BottomsSupAPI.Controllers
 
         // GET: api/Tokens
         [HttpGet]
+        [Route("api/tokens/{value?}/prop/{property?}")]
+        //[HttpGet]
         public IEnumerable<Tokens> GetTokens()
         {
-            var tokens= from r in db.Tokens
-                          select new
-                          {
-                              Id = r.TokenId,
-                              Price=r.Price,
-                              Name = r.Name,
-                              IsComplete=r.IsComplete
-                          };
-            return tokens;
+            var tokens = from r in db.Tokens
+                         select new
+                         {
+                             Id = r.TokenId,
+                             Price = r.Price,
+                             Name = r.Name,
+                             IsComplete = r.IsComplete
+                         };
+            return Ok(tokens);
         }
 
         // GET: api/Tokens/5

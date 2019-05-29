@@ -9,8 +9,6 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web.Http;
-using System.Web.Http.Controllers;
-using System.Web.Http.Description;
 using BottomsSupAPI.Areas.HelpPage.ModelDescriptions;
 using BottomsSupAPI.Areas.HelpPage.Models;
 

@@ -3,6 +3,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using BottomsSupAPI.Areas.HelpPage.ModelDescriptions;
 using BottomsSupAPI.Areas.HelpPage.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BottomsSupAPI.Areas.HelpPage.Controllers
 {
